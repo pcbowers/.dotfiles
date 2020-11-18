@@ -1,7 +1,7 @@
 - defaults:
     link:
       relink: true
-      # force: true
+      force: true
     shell:
       stdout: true
     create: true
