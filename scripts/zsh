@@ -1,6 +1,11 @@
 #!/usr/bin/bash
 
 if ! command -v zsh > /dev/null
-then 
+then
     sudo apt install zsh -y
+fi
+
+if [ "$SHELL" != "$(which zsh)" ]
+then
+    chsh -s $(which zsh)
 fi

@@ -38,5 +38,4 @@
     - [./scripts/trash-cli, Installing Trash-cli...]
     - [./scripts/xdg-utils, Installing XDG-Utils...]
     - [./scripts/zerotier-cli, Installing Zerotier-Cli...]
-    - [./scripts/zsh, Installing ZSH...]
-    - [chsh -s $(which zsh), Making ZSH the default shell...]
+    - [./scripts/zsh, Installing ZSH and setting default shell...]
