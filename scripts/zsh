@@ -8,5 +8,5 @@ fi
 if [ "$SHELL" != "$(which zsh)" ]
 then
     chsh -s $(which zsh)
-    echo $?
+    exec zsh
 fi
