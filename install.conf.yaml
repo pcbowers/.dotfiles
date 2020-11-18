@@ -38,7 +38,7 @@
     - [./scripts/lsd, Installing LSDeluxe...]
     - [./scripts/micro, Installing Micro...]
     - [./scripts/nvm, Installing NVM...]
-    - [./scripts/trash-cli, Installing Trash-cli...]
+    - [./scripts/trash-cli, Installing Trash-Cli...]
     # - [./scripts/xdg-utils, Installing XDG-Utils...]
     - [./scripts/zerotier-cli, Installing Zerotier-Cli...]
     - [./scripts/zsh, Installing ZSH and Defining Default Shell...]
