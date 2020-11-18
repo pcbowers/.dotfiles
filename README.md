@@ -30,7 +30,7 @@
 
 ## Usage
 
-_Prerequisites: python, git, zsh_
+_Prerequisites: python, git, sudo_
 
 ### Installation
 
