@@ -25,6 +25,7 @@
     - [./scripts/update, Updating & Upgrading Apt...]
     - [./scripts/bat, Installing Bat...]
     - [./scripts/colossal-cave-adventure, Installing Colossal Cave Adventure...]
+    - [./scripts/curl, Installing Curl...]
     - [./scripts/fonts-firacode, Installing FiraCode Nerd Font...]
     - [./scripts/fzf, Installing FZF...]
     - [./scripts/g++, Installing G++...]
