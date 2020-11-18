@@ -2,8 +2,6 @@
     link:
       relink: true
       force: true
-    shell:
-      stdout: true
     create: true
 
 - clean: ["~"]
@@ -38,4 +36,4 @@
     - [./scripts/trash-cli, Installing Trash-cli...]
     - [./scripts/xdg-utils, Installing XDG-Utils...]
     - [./scripts/zerotier-cli, Installing Zerotier-Cli...]
-    - [./scripts/zsh, Installing ZSH and setting default shell...]
+    - [./scripts/zsh, Installing ZSH and Defining Default Shell...]
