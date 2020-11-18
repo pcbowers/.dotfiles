@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+if ! command -v micro > /dev/null
+then
+    curl https://getmic.ro | bash
+    mv micro ~/.local/bin/micro
+fi

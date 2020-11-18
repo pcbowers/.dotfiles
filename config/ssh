@@ -1,0 +1,13 @@
+Host root
+    HostName 157.245.251.236
+    User root
+    IdentityFile ~/.ssh/root-pcbowers.com
+Host pcbowers
+    HostName 157.245.251.236
+    User pcbowers
+    IdentityFile ~/.ssh/pcbowers-pcbowers.com
+Host bedrock
+    HostName bedrocklynchburg.com
+    User bedrockl
+    IdentityFile ~/.ssh/pcbowers-bedrocklynchburg.com
+    Port 18765

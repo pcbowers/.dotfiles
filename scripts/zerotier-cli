@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+if ! command -v zerotier-cli > /dev/null
+then
+    curl -s https://install.zerotier.com | sudo bash
+fi

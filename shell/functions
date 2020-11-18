@@ -1,0 +1,27 @@
+#SHOW TREE STRUCTURE, DEFAULTS TO 1, ADDITIONAL PARAMS CAN BE INCLUDED AFTER
+function tree() {
+  lsd --tree --ignore-glob "{node_modules}" --depth ${1:-1} "${@:2}"
+}
+
+#USE BAT INSTEAD OF CAT FOR SYNTAX HIGHLIGHTING, AUTOMATICALLY ADD CERTAIN CODE HIGHLIGHTING
+function cat() {
+  if [[ $1 == *\.svelte ]]; then
+    bat $1 -l html "${@:2}"
+  elif [[ $1 == *\.vue ]]; then
+    bat $1 -l html "${@:2}"
+  else
+    bat $1 "${@:2}"
+  fi
+}
+
+#CUZ WHY NOT
+function weather() {
+  IFS=+
+  local weatheraddress="wttr.in/$*"
+  curl $weatheraddress
+  IFS=" "
+}
+
+function win() {
+  cd /mnt/c/Users/pcbow/
+}

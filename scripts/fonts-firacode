@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+if [ ! -d $HOME/.fonts ]
+then
+    sudo apt install unzip -y
+    curl -sLO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
+    unzip -q FiraCode.zip -d $HOME/.fonts
+    find $HOME/.fonts ! -name 'Fira\ Code\ Regular\ Nerd\ Font\ Complete\ Mono.otf' -type f -exec rm -f {} +
+    rm FiraCode.zip
+fi
+    

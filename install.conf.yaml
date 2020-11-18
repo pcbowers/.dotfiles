@@ -1,0 +1,42 @@
+- defaults:
+    link:
+      relink: true
+      # force: true
+    shell:
+      stdout: true
+    create: true
+
+- clean: ["~"]
+
+- link:
+    # Config Files
+    ~/.config/micro/settings.json: config/micro
+    ~/.nvm/default-packages: config/default-packages
+    ~/.p10k.zsh: config/p10k
+    ~/.ssh/config: config/ssh
+    #Git Files
+    ~/.gitconfig: git/gitconfig
+    #Shell Files
+    ~/.aliases: shell/aliases
+    ~/.functions: shell/functions
+    ~/.bashrc: shell/bashrc
+    ~/.zshrc: shell/zshrc
+
+- shell:
+    - [git submodule update --init --recursive, Installing Submodules...]
+    - [./scripts/update, Updating & Upgrading Apt...]
+    - [./scripts/bat, Installing Bat...]
+    - [./scripts/colossal-cave-adventure, Installing Colossal Cave Adventure...]
+    - [./scripts/fonts-firacode, Installing FiraCode Nerd Font...]
+    - [./scripts/fzf, Installing FZF...]
+    - [./scripts/g++, Installing G++...]
+    - [./scripts/gcc, Installing Gcc...]
+    - [./scripts/gh, Installing Github Client...]
+    - [./scripts/lsd, Installing LSDeluxe...]
+    - [./scripts/micro, Installing Micro...]
+    - [./scripts/nvm, Installing NVM...]
+    - [./scripts/trash-cli, Installing Trash-cli...]
+    - [./scripts/xdg-utils, Installing XDG-Utils...]
+    - [./scripts/zerotier-cli, Installing Zerotier-Cli...]
+    - [./scripts/zsh, Installing ZSH...]
+    - [chsh -s $(which zsh), Making ZSH the default shell...]
