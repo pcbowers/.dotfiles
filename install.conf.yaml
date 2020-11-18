@@ -35,6 +35,6 @@
     - [./scripts/micro, Installing Micro...]
     - [./scripts/nvm, Installing NVM...]
     - [./scripts/trash-cli, Installing Trash-cli...]
-    - [./scripts/xdg-utils, Installing XDG-Utils...]
+    # - [./scripts/xdg-utils, Installing XDG-Utils...]
     - [./scripts/zerotier-cli, Installing Zerotier-Cli...]
     - [./scripts/zsh, Installing ZSH and Defining Default Shell...]
