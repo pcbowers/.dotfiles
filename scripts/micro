@@ -3,5 +3,5 @@
 if ! command -v micro > /dev/null
 then
     curl https://getmic.ro | bash
-    mv micro ~/.local/bin/micro
+    sudo mv micro /usr/bin
 fi

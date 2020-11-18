@@ -3,6 +3,5 @@
 if ! command -v bat > /dev/null
 then
     sudo apt install bat -y
-    mkdir -p ~/.local/bin
-    ln -s /usr/bin/batcat ~/.local/bin/bat
+    sudo ln -s /usr/bin/batcat /usr/bin/bat
 fi
