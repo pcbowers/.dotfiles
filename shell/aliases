@@ -1,7 +1,5 @@
 #ALIASES
 alias python="python3"
-alias c="code-insiders"
-alias code="code-insiders"
 alias e="explorer.exe"
 alias pip="pip3"
 alias ..='cd ..'
@@ -13,3 +11,13 @@ alias zs="source ~/.zshrc"
 alias batcat="bat"
 alias zerotier="sudo zerotier-cli"
 alias ifconfig="ip addr show"
+
+if command -v code:
+then
+  alias c="code-insiders"
+  alias code="code-insiders"
+elif command -v code-insiders:
+then
+  alias c="code"
+  alias code="code"
+fi
