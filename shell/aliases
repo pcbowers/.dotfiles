@@ -14,10 +14,10 @@ alias ifconfig="ip addr show"
 
 if command -v code:
 then
-  alias c="code-insiders"
-  alias code="code-insiders"
-elif command -v code-insiders:
-then
   alias c="code"
   alias code="code"
+elif command -v code-insiders:
+then
+  alias c="code-insiders"
+  alias code="code-insiders"
 fi
