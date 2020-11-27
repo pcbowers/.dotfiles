@@ -12,7 +12,7 @@ alias batcat="bat"
 alias zerotier="sudo zerotier-cli"
 alias ifconfig="ip addr show"
 
-if command -v code
+if command -v code > /dev/null
 then
   alias c="code"
   alias code="code"
