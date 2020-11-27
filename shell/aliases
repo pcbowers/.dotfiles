@@ -16,7 +16,7 @@ if command -v code > /dev/null
 then
   alias c="code"
   alias code="code"
-elif command -v code-insiders
+elif command -v code-insiders > /dev/null
 then
   alias c="code-insiders"
   alias code="code-insiders"
