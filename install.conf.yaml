@@ -38,6 +38,7 @@
     - [./scripts/lsd, Installing LSDeluxe...]
     - [./scripts/micro, Installing Micro...]
     - [./scripts/nvm, Installing NVM...]
+    - [./scripts/onepass, Installing One Password...]
     - [./scripts/trash-cli, Installing Trash-Cli...]
     # - [./scripts/xdg-utils, Installing XDG-Utils...]
     - [./scripts/zerotier-cli, Installing Zerotier-Cli...]
