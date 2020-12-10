@@ -21,3 +21,6 @@ then
   alias c="code-insiders"
   alias code="code-insiders"
 fi
+
+# Specific to WSL 2
+alias dropcache="sudo sh -c \"echo 3 >'/proc/sys/vm/drop_caches' && swapoff -a && swapon -a && printf '\n%s\n' 'Ram-cache and Swap Cleared'\""
