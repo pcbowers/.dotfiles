@@ -1,5 +1,3 @@
-#!/usr/bin/bash
-
 if ! compgen -G "$HOME/.local/share/fonts/Fira*" > /dev/null
 then
     sudo apt install unzip -y
@@ -11,4 +9,3 @@ then
 else
     echo "FiraCode Nerd Font Already Installed."
 fi
-    

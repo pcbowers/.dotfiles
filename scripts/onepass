@@ -1,5 +1,3 @@
-#!/usr/bin/bash
-
 if ! command -v op > /dev/null
 then
     curl -sLO https://cache.agilebits.com/dist/1P/op/pkg/v1.8.0/op_linux_amd64_v1.8.0.zip

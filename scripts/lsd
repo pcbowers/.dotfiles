@@ -1,5 +1,3 @@
-#!/usr/bin/bash
-
 if ! command -v lsd > /dev/null
 then
     curl -sLO https://github.com/Peltoche/lsd/releases/download/0.18.0/lsd_0.18.0_amd64.deb
