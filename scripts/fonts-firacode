@@ -1,4 +1,4 @@
-if ! compgen -G "$HOME/.local/share/fonts/Fira*" > /dev/null
+if [-f "$HOME/.local/share/fonts/Fira*"]
 then
     sudo apt install unzip -y
     curl -sLO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
