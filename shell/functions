@@ -15,8 +15,8 @@ function cat() {
 }
 
 function commitizen() {
-  if [ $# -gt 0 ] && [ "$1" == "init"]; then
-    command commitizen init cz-conventional-changelog --save-dev --save-exact "$@"
+  if [[ $@ == "init" ]]; then
+    command commitizen init cz-conventional-changelog --save-dev
   else
     command commitizen "$@"
   fi    
