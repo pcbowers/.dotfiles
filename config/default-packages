@@ -5,3 +5,4 @@ vercel
 nodemon
 pm2
 typescript
+commitizen
