@@ -14,6 +14,14 @@ function cat() {
   fi
 }
 
+function op() {
+  if [[ $@ == "si" ]]; then
+    eval $(op signin my)
+  else
+    command op "$@"
+  fi
+}
+
 function commitizen() {
   if [[ $@ == "init" ]]; then
     command commitizen init cz-conventional-changelog --save-dev
