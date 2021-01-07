@@ -1,4 +1,4 @@
-if [-f "$HOME/.local/share/fonts/Fira*"]
+if [ ! -f "$HOME/.local/share/fonts/Fira Code Regular Nerd Font Complete Mono.otf" ]
 then
     sudo apt install unzip -y
     curl -sLO https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip

@@ -1,13 +1,23 @@
 Host root
     HostName 157.245.251.236
     User root
-    IdentityFile ~/.ssh/root-pcbowers.com
+    IdentityFile ~/.ssh/root
 Host pcbowers
     HostName 157.245.251.236
     User pcbowers
-    IdentityFile ~/.ssh/pcbowers-pcbowers.com
+    IdentityFile ~/.ssh/pcbowers
 Host bedrock
     HostName bedrocklynchburg.com
     User bedrockl
     IdentityFile ~/.ssh/pcbowers-bedrocklynchburg.com
     Port 18765
+Host gameserver
+    HostName 192.168.195.3
+    User gameserver
+Host dad
+    HostName home252297167.1and1-data.host
+    User u50093630
+Host personal
+    HostName 198.211.109.28
+    User root
+    IdentityFile ~/.ssh/personal
