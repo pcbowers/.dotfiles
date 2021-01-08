@@ -8,7 +8,7 @@ export BROWSER="/mnt/c/browser.exe"
 export ANTIGEN_PATH="$HOME/.dotfiles"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 export THEME="romkatv/powerlevel10k"
-export EDITOR="micro"
+export EDITOR="vim"
 
 source $ANTIGEN_PATH/antigen/antigen.zsh
 
