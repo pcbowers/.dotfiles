@@ -6,6 +6,7 @@ Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
+Plug 'preservim/nerdcommenter'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -27,6 +28,8 @@ let g:airline_powerline_fonts = 1
 nmap <C-n> :NERDTreeToggle<CR>
 
 let NERDTreeQuitOnOpen = 1
+
+let g:NERDCreateDefaultMappings = 1
 
 " Default Settings "
 set number relativenumber
