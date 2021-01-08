@@ -12,6 +12,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 Plug 'evanleck/vim-svelte', {'branch': 'main'}
+Plug 'dart-lang/dart-vim-plugin'
 
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 
