@@ -12,37 +12,37 @@
 
 - link:
     # Config Files
-    ~/.config/micro/settings.json: config/micro
-    ~/.config/nvim/init.vim: config/nvim
-    ~/.nvm/default-packages: config/default-packages
-    ~/.p10k.zsh: config/p10k
-    ~/.ssh/config: config/ssh
+    ~/.config/micro/settings.json: config/micro.json
+    ~/.config/nvim/init.vim: config/nvim.vim
+    ~/.nvm/default-packages: config/default-packages.env
+    ~/.p10k.zsh: config/p10k.sh
+    ~/.ssh/config: config/ssh.config
     #Git Files
-    ~/.gitconfig: git/gitconfig
+    ~/.gitconfig: config/gitconfig.gitconfig
     #Shell Files
-    ~/.aliases: shell/aliases
-    ~/.functions: shell/functions
-    ~/.bashrc: shell/bashrc
-    ~/.zshrc: shell/zshrc
+    ~/.aliases: shell/aliases.sh
+    ~/.functions: shell/functions.sh
+    ~/.bashrc: shell/bashrc.sh
+    ~/.zshrc: shell/zshrc.sh
 
 - shell:
     - [git submodule update --init --recursive, Installing Submodules...]
-    - [./scripts/update, Updating & Upgrading Apt...]
-    - [./scripts/pip, Installing pip...]
-    - [./scripts/bat, Installing Bat...]
-    - [./scripts/colossal-cave-adventure, Installing Colossal Cave Adventure...]
-    - [./scripts/curl, Installing Curl...]
-    - [./scripts/fonts-firacode, Installing FiraCode Nerd Font...]
-    - [./scripts/fzf, Installing FZF...]
-    - [./scripts/g++, Installing G++...]
-    - [./scripts/gcc, Installing Gcc...]
-    - [./scripts/gh, Installing Github Client...]
-    - [./scripts/lsd, Installing LSDeluxe...]
-    - [./scripts/micro, Installing Micro...]
-    - [./scripts/nvim, Installing Neovim...]
-    - [./scripts/nvm, Installing NVM...]
-    - [./scripts/onepass, Installing One Password...]
-    - [./scripts/trash-cli, Installing Trash-Cli...]
-    # - [./scripts/xdg-utils, Installing XDG-Utils...]
-    - [./scripts/zerotier-cli, Installing Zerotier-Cli...]
-    - [./scripts/zsh, Installing ZSH and Defining Default Shell...]
+    - [./scripts/update.sh, Updating & Upgrading Apt...]
+    - [./scripts/pip.sh, Installing pip...]
+    - [./scripts/bat.sh, Installing Bat...]
+    - [./scripts/colossal-cave-adventure.sh, Installing Colossal Cave Adventure...]
+    - [./scripts/curl.sh, Installing Curl...]
+    - [./scripts/fonts-firacode.sh, Installing FiraCode Nerd Font...]
+    - [./scripts/fzf.sh, Installing FZF...]
+    - [./scripts/g++.sh, Installing G++...]
+    - [./scripts/gcc.sh, Installing Gcc...]
+    - [./scripts/gh.sh, Installing Github Client...]
+    - [./scripts/lsd.sh, Installing LSDeluxe...]
+    - [./scripts/micro.sh, Installing Micro...]
+    - [./scripts/nvim.sh, Installing Neovim...]
+    - [./scripts/nvm.sh, Installing NVM...]
+    - [./scripts/onepass.sh, Installing One Password...]
+    - [./scripts/trash-cli.sh, Installing Trash-Cli...]
+    # - [./scripts/xdg-utils.sh, Installing XDG-Utils...]
+    - [./scripts/zerotier-cli.sh, Installing Zerotier-Cli...]
+    - [./scripts/zsh.sh, Installing ZSH and Defining Default Shell...]

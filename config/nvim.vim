@@ -1,46 +1,32 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'scrooloose/nerdtree'
+
+Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
-Plug 'airblade/vim-gitgutter'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'scrooloose/nerdcommenter'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+Plug 'evanleck/vim-svelte', {'branch': 'main'}
 
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
-
-Plug 'HerringtonDarkholme/yats.vim'
 
 call plug#end()
 
 " Format on Save "
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
+" Format Airline "
+let g:airline_theme='deus'
+let g:airline_powerline_fonts = 1
+
 " Nerd Tree Settings "
-inoremap jk <ESC>
 nmap <C-n> :NERDTreeToggle<CR>
-vmap ++ <plug>NERDCommenterToggle
-nmap ++ <plug>NERDCommenterToggle
 
-let g:NERDTreeGitStatusWithFlags = 1
-
-let g:NERDTreeIgnore = ['^node_modules$']
-
-function! IsNERDTreeOpen()        
-  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
-endfunction
-
-function! SyncTree()
-  if &modifiable && IsNERDTreeOpen() && strlen(expand('%')) > 0 && !&diff
-    NERDTreeFind
-    wincmd p
-  endif
-endfunction
-
-autocmd BufEnter * call SyncTree()
-
+let NERDTreeQuitOnOpen = 1
 
 " Default Settings "
 set number relativenumber
@@ -60,10 +46,22 @@ noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
-  \ 'coc-tsserver',
   \ 'coc-eslint',
   \ 'coc-prettier',
   \ 'coc-json',
+  \ 'coc-html',
+  \ 'coc-css',
+  \ 'coc-emmet',
+  \ 'coc-flutter',
+  \ 'coc-git',
+  \ 'coc-python',
+  \ 'coc-sh',
+  \ 'coc-svelte',
+  \ 'coc-tsserver',
+  \ 'coc-yaml',
+  \ 'coc-phpls',
+  \ 'coc-svg',
+  \ 'coc-spell-checker'
   \ ]
 
 syntax on
