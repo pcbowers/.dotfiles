@@ -1,6 +1,0 @@
-if ! command -v gcc > /dev/null
-then
-    sudo apt install gcc -y
-else
-    echo "Gcc Already Installed."
-fi

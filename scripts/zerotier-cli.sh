@@ -1,6 +1,0 @@
-if ! command -v zerotier-cli > /dev/null
-then
-    curl -s https://install.zerotier.com | sudo bash
-else
-    echo "Zerotier-Cli Already Installed."
-fi

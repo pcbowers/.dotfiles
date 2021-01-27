@@ -1,6 +1,0 @@
-if ! command -v colossal-cave-adventure > /dev/null
-then
-    sudo apt install colossal-cave-adventure -y
-else
-    echo "Colossal Cave Adventure Already Installed."
-fi

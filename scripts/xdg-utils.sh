@@ -1,6 +1,0 @@
-if ! command -v xdg-open > /dev/null
-then
-    sudo apt install xdg-utils -y
-else
-    echo "XDG-Utils Already Installed."
-fi

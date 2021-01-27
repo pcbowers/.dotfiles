@@ -1,8 +1,0 @@
-if ! command -v lsd > /dev/null
-then
-    curl -sLO https://github.com/Peltoche/lsd/releases/download/0.18.0/lsd_0.18.0_amd64.deb
-    sudo apt install -y ./lsd_0.18.0_amd64.deb
-    sudo rm lsd_0.18.0_amd64.deb
-else
-    echo "LSDeluxe Already Installed."
-fi

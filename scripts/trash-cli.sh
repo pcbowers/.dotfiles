@@ -1,6 +1,0 @@
-if ! command -v trash > /dev/null
-then
-    sudo apt install trash-cli -y;
-else
-    echo "Trash-Cli Already Installed."
-fi
