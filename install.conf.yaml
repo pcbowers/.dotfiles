@@ -11,8 +11,12 @@
 - clean: ["~"]
 
 - link:
-    ~/.ssh/config: config/ssh.config
-    ~/.gitconfig: config/gitconfig.gitconfig
+    ~/.ssh/config: ssh.config
+    ~/.gitconfig: gitconfig.gitconfig
+    ~/.config/fish/fish_variables: fish_variables.env
+    ~/.config/fish/config.fish: config.fish
+    ~/.config/starship.toml: starship.toml
 
 - shell:
     - [git submodule update --init --recursive, Installing Submodules...]
+    - [./bootstrap.sh, Bootsrapping System...]
