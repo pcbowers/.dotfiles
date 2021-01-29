@@ -44,7 +44,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-colorscheme gruvbox
+silent! colorscheme gruvbox
 
 noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
 noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')

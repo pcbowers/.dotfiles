@@ -6,8 +6,11 @@ sudo apt install git curl unzip python3-pip fish -y
 
 [ ! "$SHELL" = "$(which fish)" ] && chsh -s $(which fish) && echo "Default Shell set to Fish. Run \`su - $USER\` to make your updates."
 
-[ ! -d "$HOME/.asdf" ] && git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
-mkdir -p ~/.config/fish/completions && cp ~/.asdf/completions/asdf.fish ~/.config/fish/completions
+if [ ! -d "$HOME/.asdf" ]; then
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
+  mkdir -p ~/.config/fish/completions && cp ~/.asdf/completions/asdf.fish ~/.config/fish/completions
+  export PATH=$PATH:$HOME/.asdf/bin/asdf
+fi
 
 if ! command -v node > /dev/null; then
   asdf plugin add nodejs

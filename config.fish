@@ -6,6 +6,8 @@ starship init fish | source
 abbr -a -g cat bat
 abbr -a -g vi nvim
 abbr -a -g v nvim
+abbr -a -g nv nvim
+abbr -a -g n nvim
 abbr -a -g vim nvim
 abbr -a -g python python3
 abbr -a -g pip pip3
