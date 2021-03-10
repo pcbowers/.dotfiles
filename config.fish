@@ -22,6 +22,7 @@ abbr -a -g gs git status
 abbr -a -g gc git commit -m
 abbr -a -g ga git add -A
 abbr -a -g nvm nvim
+abbr -a -g gp git pull
 
 set -U fish_user_paths ~/.local/bin $fish_user_paths
 
