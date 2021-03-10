@@ -18,3 +18,13 @@ abbr -a -g c code
 abbr -a -g dropcache "sudo sh -c \"echo 3 >'/proc/sys/vm/drop_caches' && swapoff -a && swapon -a && printf '\n%s\n' 'Ram-cache and Swap Cleared'\""
 abbr -a -g sf source $HOME/.config/fish/config.fish
 abbr -a -g win cd /mnt/c/Users/pcbow
+abbr -a -g gs git status 
+abbr -a -g gc git commit -m
+abbr -a -g ga git add -A
+abbr -a -g nvm nvim
+
+set -U fish_user_paths ~/.local/bin $fish_user_paths
+
+function fish_user_key_bindings
+  fish_vi_key_bindings
+end
