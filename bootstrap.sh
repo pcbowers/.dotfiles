@@ -4,12 +4,15 @@ sudo apt update -y && sudo apt upgrade -y
 
 sudo apt install git curl unzip python3-pip fish -y
 
-[ ! "$SHELL" = "$(which fish)" ] && chsh -s $(which fish) && echo "Default Shell set to Fish. Run \`su - $USER\` to make your updates."
+if [ $SHELL != "$(which fish)" ]; then 
+  chsh -s $(which fish)
+  echo "Default Shell set to Fish. Run \`su - $USER\` to make your updates."
+fi
 
 if [ ! -d "$HOME/.asdf" ]; then
   git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
   mkdir -p ~/.config/fish/completions && cp ~/.asdf/completions/asdf.fish ~/.config/fish/completions
-  export PATH=$PATH:$HOME/.asdf/bin/asdf
+  source $HOME/.asdf/asdf.sh
 fi
 
 if ! command -v node > /dev/null; then
