@@ -52,5 +52,6 @@ if ! command -v nvim > /dev/null; then
   asdf global neovim $(asdf list neovim | head -n 1)
   sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  python3 -m pip install --user --upgrade pynvim
   nvim --headless +PlugInstall +qall
 fi
