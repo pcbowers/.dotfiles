@@ -4,7 +4,7 @@ sudo apt update -y && sudo apt upgrade -y
 
 sudo apt install git curl unzip python3-pip fish httpie -y
 
-if [ $SHELL != "$(which fish)" ]; then 
+if [ $SHELL != "$(which fish)" ]; then
   chsh -s $(which fish)
   echo "Default Shell set to Fish. Run \`su - $USER\` to make your updates."
 fi
@@ -17,9 +17,16 @@ fi
 
 if ! command -v node > /dev/null; then
   asdf plugin add nodejs
-  bash -c '${ASDF_DATA_DIR:=$HOME/.asdf/plugins/nodejs/bin/import-release-team-keyring'}
+  bash -c '${ASDF_DATA_DIR:=$HOME/.asdf/plugins/nodejs/bin/import-release-team-keyring}'
   asdf install nodejs lts
   asdf global nodejs $(asdf list nodejs | head -n 1)
+fi
+
+if ! command -v op > /dev/null; then
+  curl -sLO https://cache.agilebits.com/dist/1P/op/pkg/v1.11.2/op_linux_amd64_v1.11.2.zip
+  unzip op_linux_amd64_v1.11.2.zip
+  sudo mv op /usr/bin
+  sudo rm op_linux_amd64_v1.11.2.zip op.sig
 fi
 
 if ! command -v java > /dev/null; then
