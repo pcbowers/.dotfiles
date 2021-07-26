@@ -2,7 +2,7 @@
 
 sudo apt update -y && sudo apt upgrade -y
 
-sudo apt install git curl unzip python3-pip fish -y
+sudo apt install git curl unzip python3-pip fish httpie -y
 
 if [ $SHELL != "$(which fish)" ]; then 
   chsh -s $(which fish)
