@@ -29,11 +29,11 @@ if ! command -v op > /dev/null; then
   sudo rm op_linux_amd64_v1.11.2.zip op.sig
 fi
 
-if ! command -v java > /dev/null; then
-  asdf plugin add java
-  asdf install java adoptopenjdk-11.0.10+9
-  asdf global java $(asdf list java | head -n 1)
-fi
+# if ! command -v java > /dev/null; then
+#   asdf plugin add java
+#   asdf install java adoptopenjdk-11.0.10+9
+#   asdf global java $(asdf list java | head -n 1)
+# fi
 
 if ! command -v bat > /dev/null; then
   asdf plugin add bat
