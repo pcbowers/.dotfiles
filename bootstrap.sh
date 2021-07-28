@@ -6,7 +6,6 @@ sudo apt install git curl unzip python3-pip fish httpie -y
 
 if [ $SHELL != "$(which fish)" ]; then
   chsh -s $(which fish)
-  echo "Default Shell set to Fish. Run \`su - $USER\` to make your updates."
 fi
 
 if [ ! -d "$HOME/.asdf" ]; then
