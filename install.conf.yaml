@@ -27,4 +27,4 @@
     - 
       description: ""
       quiet: true
-      command: echo -e "\033[0;32mIf this is your first time installing you may have to run the following commands:\033[0;34m\n\n- Run `\033[0;35msu - $USER\033[0;34m` to reset the default shell.\n- Open nvim or vim and run `\033[0;35m:PlugInstall\033[0;34m` to install all plugins.\n"
+      command: echo -e "\e[32mIf this is your first time installing you may have to run the following commands:\e[34m\n\n- Run `\e[35msu - $USER\e[34m` to reset the default shell.\n- Open nvim or vim and run `\e[35m:PlugInstall\e[34m` to install all plugins.\n"
